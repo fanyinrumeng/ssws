@@ -38,6 +38,14 @@
         "CacheDurationSec": {
             "description": "缓存时间",
             "value": "120"
+        },
+        "network": {
+            "description": "网络host",
+            "value": "host"
+        },
+        "restart": {
+            "description": "重启",
+            "value": "always"
         }
     },
     "website": "https://github.com/mixool/xrayku",
