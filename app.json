@@ -19,17 +19,25 @@
             "description": "是否使用mysql,默认否",
             "value": "0"
         },
-        "CONFIGXRAY": {
-            "description": "自定义网络地址读取配置运行xray，不熟悉xray配置的请勿修改",
-            "value": "https://raw.githubusercontent.com/mixool/xrayku/master/etc/xray.json"
+        "downWithPanel": {
+            "description": "面板类型",
+            "value": "0"
         },
-        "ParameterSSENCYPT": {
-            "description": "SS加密方式，查看支持协议: https://www.v2fly.org/config/protocols/shadowsocks.html",
-            "value": "chacha20-ietf-poly1305"
+        "node_id": {
+            "description": "节点id",
+            "value": ""
         },
-        "StoreFiles": {
-            "description": "自定义网络地址读取存储文件列表",
-            "value": "https://raw.githubusercontent.com/mixool/xrayku/master/etc/StoreFiles"
+        "sspanel_url": {
+            "description": "机场地址,https://4kxray.cf/",
+            "value": "https://4kxray.cf/"
+        },
+        "key": {
+            "description": "面板对接后端key",
+            "value": "NimaQu"
+        },
+        "CacheDurationSec": {
+            "description": "缓存时间",
+            "value": "120"
         }
     },
     "website": "https://github.com/mixool/xrayku",
