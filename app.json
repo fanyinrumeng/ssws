@@ -11,10 +11,6 @@
             "description": "速度测试，默认否",
             "value": "0"
         },
-        "api_port": {
-            "description": "端口",
-            "value": "2333"
-        },
         "usemysql": {
             "description": "是否使用mysql,默认否",
             "value": "0"
