@@ -1,12 +1,7 @@
-FROM alpine:edge
+FROM crackair/xrayr:latest
 
-RUN apk update && \
-    apk add --no-cache ca-certificates caddy tor wget && \
-    wget -qO- https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip | busybox unzip - && \
-    chmod +x /xray && \
-    rm -rf /var/cache/apk/*
+ADD ./config/config.yml /etc/XrayR/config.yml
+ADD xrayr.sh /xrayr.sh
+RUN chmod +x /xrayr.sh
 
-ADD start.sh /start.sh
-RUN chmod +x /start.sh
-
-CMD /start.sh
+CMD /xrayr.sh
